@@ -9,7 +9,7 @@ session_start();
             
         $user_name = $_POST['user_name'];
 	$password = $_POST['password'];
-        
+        $dbname="login_sample_db";
         
         $query= mysqli_query($con, "SELECT * FROM users WHERE user_name='$user_name'") ;
         
